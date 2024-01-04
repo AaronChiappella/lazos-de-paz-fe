@@ -1,0 +1,14 @@
+.filter-container { width: 50vh;}
+/* filters.css */
+
+.filter-container {
+  display: flex;
+}
+
+.scroll-container {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
+  padding: 10px; /* Agrega espacio alrededor del contenido si es necesario */
+  /* Otros estilos según sea necesario */
+}

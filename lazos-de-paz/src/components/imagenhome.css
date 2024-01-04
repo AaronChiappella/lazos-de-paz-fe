@@ -1,0 +1,9 @@
+.imagen-home-container {
+   
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    position: relative;
+    margin-top:20px;
+    margin-bottom: 20px;
+  }

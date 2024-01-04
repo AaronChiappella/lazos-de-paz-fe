@@ -1,0 +1,22 @@
+/* ImagenCabecera.css */
+
+.imagen-cabecera-container {
+    background-image: url('../assets/cabecera.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    position: relative;
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+  
+  .texto-centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4em;
+    color: white; /* Cambia el color del texto según sea necesario */
+  }
+  
