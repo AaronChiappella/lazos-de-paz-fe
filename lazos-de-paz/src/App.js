@@ -7,6 +7,9 @@ import Products from './components/Products';
 import Nosotros from './components/Nosotros';
 
 
+
+
+
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -21,8 +24,7 @@ function App() {
         <Route path='/contactanos' />
    
       </Routes>
-
-
+      
   </div>
   );
 }

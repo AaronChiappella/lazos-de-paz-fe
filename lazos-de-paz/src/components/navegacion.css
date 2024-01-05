@@ -4,11 +4,21 @@
     /* Agrega más formatos si es necesario */
   }
   
-.lazos-de-paz {
+  .lazos-de-paz {
     font-family: 'AlexBrushFont';
-    font-size: 1.3em
-  }
+    font-size: 1.3em;
+    font-weight: bold;
+}
 
-.text-link {font-size: large ;}
+.text-link {
+    font-size: medium;
+    font-weight: 500;
+  color: rgb(49, 48, 48);
+}
 
-.navbar-personalize {background-color: aqua;}
+.text-link:hover {
+    transform: scale(1.05);
+    color: #000;
+}
+
+.navbar-custom{background-color: #FFA9A1 ; margin: 0;width: auto;}

@@ -18,15 +18,14 @@ function Navegacion() {
 
 
 
-    <div className='p-1 '>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" sticky="top">
-
+    <div className='p-1  '>
+        <Navbar collapseOnSelect expand="lg" className="navbar-custom" sticky="top">
         <Navbar.Brand>
           <img
-            alt=""
+            alt="logo"
             src={logo}
-            width="30"
-            height="30"
+            width="40"
+            height="40"
             className="d-inline-block align-top"
           />{' '}
 
@@ -35,7 +34,7 @@ function Navegacion() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/Home' className='text-link'>Home</Nav.Link>
+            <Nav.Link as={Link} to='/Home' className='text-link '>Home</Nav.Link>
             <Nav.Link as={Link} to='/Products' className='text-link'>Productos</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -59,7 +58,7 @@ function Navegacion() {
                 src={carrrito}
                 width="30"
                 height="30"
-                className="d-inline-block align-top"
+                className="d-inline-block align-top text-link "
               />{' '}
             </Navbar.Brand>
 
@@ -69,7 +68,7 @@ function Navegacion() {
                 src={menu}
                 width="30"
                 height="30"
-                className="d-inline-block align-top"
+                className="d-inline-block align-top text-link "
               />{' '}
 
             </Navbar.Brand>
