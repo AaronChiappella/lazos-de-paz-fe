@@ -1,20 +1,43 @@
-import Container from 'react-bootstrap/Container';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
+
+/* logo */
+import logo from '../assets/lana-logo.svg';
+import carrrito from '../assets/carrito-compras.svg'
+import menu from '../assets/menu.svg'
+
+import { Link } from 'react-router-dom';
+
+import './navegacion.css'
 
 function Navegacion() {
   return (
-    <>
-       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" sticky="top">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+
+
+
+
+    <div className='p-1 '>
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" sticky="top">
+
+        <Navbar.Brand>
+          <img
+            alt=""
+            src={logo}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{' '}
+
+          <span className="lazos-de-paz">Lazos de Paz</span>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+            <Nav.Link as={Link} to='/Home' className='text-link'>Home</Nav.Link>
+            <Nav.Link as={Link} to='/Products' className='text-link'>Productos</Nav.Link>
+            {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -24,19 +47,41 @@ function Navegacion() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
+            <Nav.Link as={Link} to='/Nosotros' className='text-link'>Nosotros</Nav.Link>
+            <Nav.Link as={Link} className='text-link'>Contactanos</Nav.Link>
+
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+            <Navbar.Brand href="#">
+              <img
+                alt=""
+                src={carrrito}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+            </Navbar.Brand>
+
+            <Navbar.Brand href="#">
+              <img
+                alt=""
+                src={menu}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+
+            </Navbar.Brand>
+
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  
-    </>)
+
+
+
+      </Navbar>
+    </div>
+  )
 }
 
 export default Navegacion;

@@ -4,8 +4,6 @@ import Filters from "./Filters";
 
 
 
-import React, { useState, useEffect } from 'react';
-
 
 function Products() {
 
@@ -33,4 +31,4 @@ function Products() {
 
 }
 
-export default Products
+export default Products;

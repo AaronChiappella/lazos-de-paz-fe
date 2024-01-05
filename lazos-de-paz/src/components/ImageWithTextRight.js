@@ -1,9 +1,10 @@
 import React from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import './imageWithText.css'
 
 function ImageWithText({ imageUrl, caption, heading, description }) {
   return (
-    <div className="image-with-text isolate collapse-padding scroll-trigger animate--slide-in">
+    <div className="image-with-text isolate collapse-padding scroll-trigger animate--slide-in imageWithTextRight-personalize">
 
         <Row className="image-with-text__grid">
           
@@ -21,7 +22,7 @@ function ImageWithText({ imageUrl, caption, heading, description }) {
             </div>
           </Col>
           <Col md={6} className="image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--middle">
-            <div className="image-with-text__media image-with-text__media--adapt gradient color-background-1 global-media-settings media" style={{ paddingBottom: '5.0%', overflow: 'hidden' }}>
+            <div className="image-with-text__media image-with-text__media--adapt gradient color-background-1 global-media-settings media" style={{ paddingBottom: '2.0%', overflow: 'hidden' }}>
               <Image src={imageUrl} alt="" fluid />
             </div>
           </Col>

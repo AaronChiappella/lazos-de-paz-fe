@@ -1,13 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-import Products from './components/Products';
-import Home from './components/Home';
 
+import Navegacion from './components/Navegacion';
+import Home from './components/Home';
+import Products from './components/Products';
+import Nosotros from './components/Nosotros';
+
+
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-<Home />
+       <Navegacion />
+       
+       <Routes>
+        <Route path='/home' element={ <Home /> }/>
+        <Route path='/products' element={ <Products /> }/>
+        <Route path='/nosotros' element ={<Nosotros />} />
+        <Route path='/contactanos' />
+   
+      </Routes>
+
+
   </div>
   );
 }

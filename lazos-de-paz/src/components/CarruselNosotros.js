@@ -4,7 +4,7 @@ import image1 from '../assets/c1.jpg'; // Importa la imagen aquí
 import image2 from '../assets/c2.jpg'; // Importa la imagen aquí
 import image3 from '../assets/c3.jpg'; // Importa la imagen aquí
 
-function CarruselHome() {
+function CarruselNosotros() {
   return (
     <Carousel fade>
       <Carousel.Item>
@@ -34,4 +34,4 @@ function CarruselHome() {
   );
 }
 
-export default CarruselHome;
+export default CarruselNosotros;

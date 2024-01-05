@@ -1,41 +1,39 @@
-import React from 'react';
-
-
-/* components*/
-import CarruselHome from './CarruselHome';
-import ImageWithTextRight from './ImageWithTextRight';
-import ImageWithTextLeft from './ImageWithTextLeft';
-
-/* assets */
-import image1 from '../assets/image1.jpg'; // Importa la imagen aquí
-import image2 from '../assets/image2.jpg'; // Importa la imagen aquí
-import image3 from '../assets/image3.jpg'; // Importa la imagen aquí
-
+import HomeSlider from "./HomeSlider";
+import ImageWithTextRight from "./ImageWithTextRight";
+import ImageWithTextLeft from "./ImageWithTextLeft";
+import ProductList from "./ProductsList";
+import image2 from '../assets/image2.jpg';
 
 function Home() {
     return (
-        <div >
-            {/* Pasa la imagen importada como prop a ImagenHome */}
+        <>
+            <div >
+                <HomeSlider />
+            </div>
+            
+            <ImageWithTextRight
+                imageUrl={image2}
+                caption="Quienes somos?"
+                heading="Lazos de paz"
+                description="Lorem ipsum dolor sit amet consectetur adipiscing elit netus, nullam volutpat quam auctor neque odio urna fames in, sed mattis potenti egestas ante et cum."
+            />
             <ImageWithTextLeft
                 imageUrl={image2}
-                caption="ROL"
-                heading="NOMBRE"
-                description="DESCRIPCION"
+                caption="Que Hacemos?"
+                heading="Tejidos de amor"
+                description="Lorem ipsum dolor sit amet consectetur adipiscing elit netus, nullam volutpat quam auctor neque odio urna fames in, sed mattis potenti egestas ante et cum."
             />
-            <ImageWithTextRight imageUrl={image2}
-                caption="ROL"
-                heading="NOMBRE"
-                description="DESCRIPCION"
-            />
-            <ImageWithTextLeft
-                imageUrl={image3}
-                caption="ROL"
-                heading="NOMBRE"
-                description="DESCRIPCION"
-            />
-            <CarruselHome />
-        </div>
+
+
+
+
+            <ProductList />
+
+
+        </>
+
     );
 }
+
 
 export default Home;

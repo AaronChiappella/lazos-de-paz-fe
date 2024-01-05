@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'AlexBrushFont';
+    src: url('../assets/AlexBrush-Regular.ttf') ;
+    /* Agrega más formatos si es necesario */
+  }
+  
+.lazos-de-paz {
+    font-family: 'AlexBrushFont';
+    font-size: 1.3em
+  }
+
+.text-link {font-size: large ;}
+
+.navbar-personalize {background-color: aqua;}
