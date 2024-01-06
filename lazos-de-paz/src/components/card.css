@@ -21,16 +21,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.card-img-top:hover {
-  transform: scale(1.8);
-}
 
-.scroll-container {
-  flex: 1;
-  overflow-y: auto;
-  max-height: 800px; /* Ajusta la altura máxima según tus necesidades */
-  padding: 10px; /* Agrega espacio alrededor del contenido si es necesario */
-  /* Otros estilos según sea necesario */
-}
 
 

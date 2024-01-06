@@ -3,14 +3,22 @@ import ImageWithTextRight from "./ImageWithTextRight";
 import ImageWithTextLeft from "./ImageWithTextLeft";
 import ProductList from "./ProductsList";
 import image2 from '../assets/image2.jpg';
+import Banners from "./Banners";
+import { Row, Col } from "react-bootstrap";
 
 function Home() {
+
+
+
+
     return (
         <>
             <div >
                 <HomeSlider />
             </div>
-            
+       <Banners />
+
+
             <ImageWithTextRight
                 imageUrl={image2}
                 caption="Quienes somos?"
@@ -37,3 +45,7 @@ function Home() {
 
 
 export default Home;
+
+
+
+
