@@ -4,10 +4,11 @@
     background-image: url('../assets/cabecera.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px; /* Ajusta la altura según tus necesidades */
+    height: 40vh; /* Ajusta la altura según tus necesidades */
     position: relative;
-    margin-top:20px;
-    margin-bottom: 20px;
+    margin-top:7vh;
+    margin-bottom:2vh
+
   }
   
   .texto-centrado {

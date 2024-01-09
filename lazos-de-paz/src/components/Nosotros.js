@@ -3,38 +3,40 @@ import React from 'react';
 
 /* components*/
 
-import ImageWithTextRight from './ImageWithTextRight';
-import ImageWithTextLeft from './ImageWithTextLeft';
 
-/* assets */
-import image2 from '../assets/image2.jpg'; // Importa la imagen aquí
-import image3 from '../assets/image3.jpg'; // Importa la imagen aquí
 import CarruselNosotros from './CarruselNosotros';
+import CardNosotrosIzq from './CardNosotrosIzq';
+import CardNosotrosDer from './CardNosotrosDer';
+import { Container } from 'react-bootstrap';
 
+
+import './nosotros.css'
 
 function Nosotros() {
     return (
         <div >
-            {/* Pasa la imagen importada como prop a ImagenHome */}
-            <ImageWithTextLeft
-                imageUrl={image2}
-                caption="ROL"
-                heading="NOMBRE"
-                description="DESCRIPCION"
-            />
-            <ImageWithTextRight imageUrl={image2}
-                caption="ROL"
-                heading="NOMBRE"
-                description="DESCRIPCION"
-            />
-            <ImageWithTextLeft
-                imageUrl={image3}
-                caption="ROL"
-                heading="NOMBRE"
-                description="DESCRIPCION"
-            />
-            <CarruselNosotros/>
+
+
+            <iframe src="https://www.youtube.com/embed/PTjuYrZPq7U?si=ZyMRrkd3odcA4tnt?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+
+
+
+
+            <Container>
+                <h3>TEXTO TITULO </h3>
+                <p className='text-center'>das</p>
+            </Container>
+
+            <CardNosotrosIzq titulo={'TITULOPRUEBA'} caption={'CaptionPrueba'} descripcion={'este texto de prueba'} />
+
+
+            <CardNosotrosDer titulo={'TITULOPRUEBA'} caption={'CaptionPrueba'} descripcion={'este texto de prueba'} />
+
+            <CardNosotrosIzq titulo={'TITULOPRUEBA'} caption={'CaptionPrueba'} descripcion={'este texto de prueba'} />
+
         </div>
+
+
     );
 }
 

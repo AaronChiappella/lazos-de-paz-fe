@@ -5,15 +5,14 @@ import './card.css';
 
 function Card({ product }) {
   return (
-    <div className="card text-center bg-dark animate__animated animate__fadeInUp">
+    <div className="card text-center animate__animated animate__fadeInUp">
       <div className="overflow">
         <img src={product.image} alt={`${product.title} `} className="card-img-top" />
       </div>
-      <div className="card-body text-light">
+      <div className=" ">
         <h4 className="card-title">{product.title}</h4>
-        <p className="card-text text-secondary">
-          {product.description}
-        </p>
+
+        <p className='card-price'> $1000  </p>
       </div>
     </div>
   );

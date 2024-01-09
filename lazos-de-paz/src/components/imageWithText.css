@@ -1,13 +1,24 @@
 /* imageWithText */
+.container-image-with-text {
+    
+    border:4px solid black;
+   padding: 1%;
+   background-color: #fff;
+ border-radius: 10px;
 
-.imageWithTextRight-personalize {padding: 2%;
-    margin: 2%;
-    border-radius: 20px;
-background-color: #fff1e3;
 }
 
-.imageWithTextLeft-personalize {padding: 2%;
-    margin: 2%;
-    border-radius: 20px;
-background-color: #fff1e3;
-}
+
+
+.image-with-text-personalize {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2%;
+    
+   
+  }
+
+  .image-with-text-personalize  p {margin: 0}
+
+  

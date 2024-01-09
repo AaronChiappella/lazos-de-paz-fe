@@ -1,10 +1,10 @@
 .card:hover {
-  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
-  transition: all 0.7s linear;
+   transition: all 0.7s linear;
+
 }
 
 .card-body {
-  padding: 2rem 0 !important;
+  
 }
 
 .card-text {
@@ -19,8 +19,16 @@
 .card-img-top {
   transform: scale(1);
   transition: all 0.2s ease-in-out;
+  border-radius: 0 !important;
 }
 
 
+.card {
+  margin: 2%;
+  border-radius: 0 !important;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.357);
+}
 
+.card-title{color: BLACK; font-weight: 400; font-size:medium ;}
 
+.card-price{font-size: large; font-weight: 500; color:#d19e66}

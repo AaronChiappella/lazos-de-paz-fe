@@ -47,9 +47,12 @@ body{
   }
   
   .data-container{
-    background:#ffffff;
+    
     height:100;
     display:flex;
     justify-content:center;
     align-items:center;
   }
+
+
+  .banner-title-b{color: black; font-weight: 500;}
