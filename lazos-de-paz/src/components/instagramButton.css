@@ -1,0 +1,43 @@
+.ig-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 110px;
+    right: 40px;
+    background-color: #ffffff; /* Color principal de Instagram */
+    color: #fff; /* Color del texto */
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .3s;
+    text-decoration: none;
+    border: 3px solid transparent; /* Añadido un borde transparente */
+}
+
+
+
+.ig-my-float {
+    margin-top: 16px;
+}
+
+.ig-icon{height: 45%;
+width: 45%;}
+
+
+
+.ig-float:hover {
+    background-color: #fff; /* Color de fondo al pasar el mouse */
+    color: #bc2a8d; /* Color del texto al pasar el mouse */
+    border-color: #bc2a8d;
+}
+    
+
+
+.ig-my-float {
+    margin-top: 16px;
+}

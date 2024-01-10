@@ -1,11 +1,9 @@
 .card:hover {
-   transition: all 0.7s linear;
+   transition: all 0.1s linear;
+   transform: scale(1.03);
 
 }
 
-.card-body {
-  
-}
 
 .card-text {
   padding: 0.3rem 1rem;
@@ -20,6 +18,9 @@
   transform: scale(1);
   transition: all 0.2s ease-in-out;
   border-radius: 0 !important;
+  border: none;
+
+width: 100%;
 }
 
 
@@ -28,7 +29,7 @@
   border-radius: 0 !important;
   box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.357);
 }
-
-.card-title{color: BLACK; font-weight: 400; font-size:medium ;}
+.card-text{margin: 1%;}
+.card-title{color: BLACK; font-weight: 400; font-size:medium ;font-weight: bold; }
 
 .card-price{font-size: large; font-weight: 500; color:#d19e66}

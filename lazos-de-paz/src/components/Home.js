@@ -5,7 +5,10 @@ import ProductosDestacados from "./ProductosDestacados";
 import image2 from '../assets/image2.jpg';
 import Banners from "./Banners";
 
+
 import './Home.css'
+import WhatsappButton from "./WhatsappButton";
+import InstagramButton from "./InstagramButton";
 
 function Home() {
 
@@ -17,8 +20,8 @@ function Home() {
             <div >
                 <HomeSlider />
             </div>
-       <Banners />
-
+            <Banners />
+        
 
             <ImageWithTextRight
                 imageUrl={image2}
@@ -26,14 +29,14 @@ function Home() {
                 heading="Lazos de paz"
                 description="Lorem ipsum dolor sit amet consectetur adipiscing elit netus, nullam volutpat quam auctor neque odio urna fames in, sed mattis potenti egestas ante et cum."
             />
-         
+
 
 
 
 
             <ProductosDestacados />
-
-
+<InstagramButton />
+<WhatsappButton/>
         </div>
 
     );

@@ -3,47 +3,78 @@ import Slider from 'react-slick';
 import Card from './Card';
 import './productosDestacados.css';
 
-import image1 from '../assets/image1.jpg';
-import image2 from '../assets/image2.jpg';
-import image3 from '../assets/image3.jpg';
 
-import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
-
+import imagenProducto1 from '../assets/imagenesProductos/bandolera.webp'
+import imagenProducto2 from '../assets/imagenesProductos/bufanda-angelica.webp'
+import imagenProducto3 from '../assets/imagenesProductos/bufandon-llama-vision.webp'
+import imagenProducto4 from '../assets/imagenesProductos/cartera-chavela.webp'
+import imagenProducto5 from '../assets/imagenesProductos/chal-ana.webp'
+import imagenProducto6 from '../assets/imagenesProductos/chaleco-ines.webp'
+import imagenProducto7 from '../assets/imagenesProductos/ruana-andresa.webp'
+import imagenProducto8 from '../assets/imagenesProductos/top-nude.webp'
 
 
 const ProductosDestacados = () => {
     const products = [
         {
             id: 1,
-            name: "Producto1",
-            description: "producto1 xd",
-            image: image1
+            name: "Bandolera",
+            description: "Telar Elpis",
+            image: imagenProducto1,
+            price:'93.760 ARS'
+            
         },
-        {
-            id: 4,
-            name: "Producto1",
-            description: "producto1 xd",
-            image: image1
-        },
-        {
-            id: 5,
-            name: "Producto1",
-            description: "producto1 xd",
-            image: image1
-        },
+        
         {
             id: 2,
-            name: "Producto2",
-            description: "producto2 xd",
-            image: image2
-        },
+            name: "Bufanda Angelica",
+            description: "100% lana de Oveja",
+            image: imagenProducto2,
+            price:'54.000 ARS'
+        } 
+        ,
         {
-            id: 3,
-            name: "Producto3",
-            description: "producto3 xd",
-            image: image3
-        }
+            id:3 ,
+            name: "Bufandon Llama Vision",
+            description: "100% lana de Llama",
+            image: imagenProducto3,
+            price:'67.600 ARS'
+        } ,
+        {
+            id:4 ,
+            name: "Cartera Chavela",
+            description: "100% lana sintetica",
+            image: imagenProducto4,
+            price:'20.400 ARS'
+        } ,
+        {
+            id: 5,
+            name: "Chal Ana",
+            description: "100% lana de Oveja",
+            image: imagenProducto5,
+            price:'44.000 ARS'
+        } ,
+        {
+            id: 6,
+            name: "Chaleco Ines",
+            description: "100% lana de Oveja",
+            image: imagenProducto6,
+            price:'45.000 ARS'
+        } ,
+        {
+            id: 7,
+            name: "Ruana Andresa",
+            description: "100% lana de Llama",
+            image: imagenProducto7,
+            price:'120.000 ARS'
+        } ,
+        {
+            id:8 ,
+            name: "Top Crudo",
+            description: "100% Lana de Oveja",
+            image: imagenProducto8,
+            price:'51.000 ARS'
+        } 
     ];
 
 
@@ -51,7 +82,10 @@ const ProductosDestacados = () => {
         <div className=" container container-product-list">
            
             <div className="container d-flex justify-content-center align-items-center">
+                
                 <div className="row">
+                    <div ><h3> Productos Destacados</h3>
+                    </div>
                         {products.map(product => (
                             <div className="col-md-3" key={product.id}>
                                 <Card product={product} />

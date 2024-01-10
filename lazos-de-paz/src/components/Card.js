@@ -9,10 +9,10 @@ function Card({ product }) {
       <div className="overflow">
         <img src={product.image} alt={`${product.title} `} className="card-img-top" />
       </div>
-      <div className=" ">
-        <h4 className="card-title">{product.title}</h4>
-
-        <p className='card-price'> $1000  </p>
+      <div className="card-text">
+        <h4 className="card-title">{product.name}</h4>
+<p className='text-left text-secondary' >{product.description}</p>
+        <p className='card-price'>{product.price}  </p>
       </div>
     </div>
   );

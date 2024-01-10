@@ -5,7 +5,8 @@ import Navegacion from './components/Navegacion';
 import Home from './components/Home';
 import Products from './components/Products';
 import Nosotros from './components/Nosotros';
-
+import WhatsappButton from "./components/WhatsappButton";
+import InstagramButton from "./components/InstagramButton";
 
 
 
@@ -16,6 +17,7 @@ import CardEstilo from './components/Banners';
 function App() {
   return (
     <div className="App">
+     
       <Navegacion />
 
       <Routes>
@@ -25,7 +27,8 @@ function App() {
         <Route path='/contactanos' />
 
       </Routes>
-
+      <InstagramButton />
+<WhatsappButton/>
 
     </div>
   );
