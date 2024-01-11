@@ -7,8 +7,8 @@ import Banners from "./Banners";
 
 
 import './Home.css'
-import WhatsappButton from "./WhatsappButton";
-import InstagramButton from "./InstagramButton";
+import InfoSlider from "./InfoSlider";
+
 
 function Home() {
 
@@ -23,20 +23,14 @@ function Home() {
             <Banners />
         
 
-            <ImageWithTextRight
-                imageUrl={image2}
-                caption="Quienes somos"
-                heading="Lazos de paz"
-                description="Lorem ipsum dolor sit amet consectetur adipiscing elit netus, nullam volutpat quam auctor neque odio urna fames in, sed mattis potenti egestas ante et cum."
-            />
-
+            <InfoSlider />
+        
 
 
 
 
             <ProductosDestacados />
-<InstagramButton />
-<WhatsappButton/>
+
         </div>
 
     );

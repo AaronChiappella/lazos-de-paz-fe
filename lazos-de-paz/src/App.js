@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Navegacion from './components/Navegacion';
@@ -12,23 +11,23 @@ import InstagramButton from "./components/InstagramButton";
 
 
 import { Routes, Route } from 'react-router-dom'
-import CardEstilo from './components/Banners';
 
 function App() {
   return (
     <div className="App">
-     
+
       <Navegacion />
 
       <Routes>
-        <Route path='/home' element={<Home />} />
+      <Route path='/' element={<Home />} />
         <Route path='/products' element={<Products />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/contactanos' />
 
       </Routes>
       <InstagramButton />
-<WhatsappButton/>
+      <WhatsappButton />
+
 
     </div>
   );

@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
- import { useState } from 'react';
 
 import './filters.css';
 
-
 function Filters() {
-
   const [selectedColors, setSelectedColors] = useState([]);
+  const [activeAccordion, setActiveAccordion] = useState(['0', '1', '2', '3', '5']); // Todos los elementos abiertos por defecto
+
   const handleCheckboxChange = (color) => {
     const updatedColors = selectedColors.includes(color)
       ? selectedColors.filter((selectedColor) => selectedColor !== color)
@@ -17,6 +16,10 @@ function Filters() {
     setSelectedColors(updatedColors);
   };
 
+  const sexOptions = ['Masculino', 'Femenino', 'Unisex'];
+  const categoryOptions = ['Superior', 'Inferior', 'Accesorio'];
+  const typeProductOptions = ['Lana fina', 'Lana gruesa', 'Lana Intermedia'];
+  const edadOptions = ['Bebes', 'Niños/as', 'Adultos'];
   const colorOptions = [
     'Negro',
     'Amarillo',
@@ -35,21 +38,19 @@ function Filters() {
   return (
     <div className='filter-container' sticky="left">
       <div className='scroll-container'>
-        <Accordion defaultActiveKey="0">
+        <Accordion activeKey={activeAccordion} onSelect={(e) => setActiveAccordion(e)}>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Genero</Accordion.Header>
+            <Accordion.Header>Sexo</Accordion.Header>
             <Accordion.Body>
-              <Form >
-                {['checkbox'].map((type) => (
-                  <div key={`default-${type}`} className="mb-3">
-                    <Form.Check // prettier-ignore
-                      type={type}
-                      id={`default-${type}`}
-                      label={`default ${type}`}
-                    />
-
-
-                  </div>
+              <Form>
+                {sexOptions.map((sex) => (
+                  <Form.Check
+                    key={sex}
+                    type="checkbox"
+                    id={sex}
+                    label={sex}
+                    className="d-flex justify-content-start"
+                  />
                 ))}
               </Form>
             </Accordion.Body>
@@ -59,34 +60,31 @@ function Filters() {
             <Accordion.Header>Categorias</Accordion.Header>
             <Accordion.Body>
               <Form>
-                {['checkbox'].map((type) => (
-                  <div key={`default-${type}`} className="mb-3">
-                    <Form.Check // prettier-ignore
-                      type={type}
-                      id={`default-${type}`}
-                      label={`default ${type}`}
-                    />
-
-
-                  </div>
+                {categoryOptions.map((category) => (
+                  <Form.Check
+                    key={category}
+                    type="checkbox"
+                    id={category}
+                    label={category}
+                    className="d-flex justify-content-start"
+                  />
                 ))}
               </Form>
             </Accordion.Body>
           </Accordion.Item>
+
           <Accordion.Item eventKey="2">
             <Accordion.Header>Tipo De Producto</Accordion.Header>
             <Accordion.Body>
               <Form>
-                {['checkbox'].map((type) => (
-                  <div key={`default-${type}`} className="mb-3">
-                    <Form.Check // prettier-ignore
-                      type={type}
-                      id={`default-${type}`}
-                      label={`default ${type}`}
-                    />
-
-
-                  </div>
+                {typeProductOptions.map((type) => (
+                  <Form.Check
+                    key={type}
+                    type="checkbox"
+                    id={type}
+                    label={type}
+                    className="d-flex justify-content-start"
+                  />
                 ))}
               </Form>
             </Accordion.Body>
@@ -96,16 +94,14 @@ function Filters() {
             <Accordion.Header>Edad</Accordion.Header>
             <Accordion.Body>
               <Form>
-                {['checkbox'].map((type) => (
-                  <div key={`default-${type}`} className="mb-3">
-                    <Form.Check // prettier-ignore
-                      type={type}
-                      id={`default-${type}`}
-                      label={`default ${type}`}
-                    />
-
-
-                  </div>
+                {edadOptions.map((edad) => (
+                  <Form.Check
+                    key={edad}
+                    type="checkbox"
+                    id={edad}
+                    label={edad}
+                    className="d-flex justify-content-start"
+                  />
                 ))}
               </Form>
             </Accordion.Body>
@@ -114,21 +110,21 @@ function Filters() {
           <Accordion.Item eventKey="5">
             <Accordion.Header>Colores</Accordion.Header>
             <Accordion.Body>
-            <Form>
-      {colorOptions.map((color) => (
-        <Form.Check
-          key={color}
-          type="checkbox"
-          id={color}
-          label={color}
-          checked={selectedColors.includes(color)}
-          onChange={() => handleCheckboxChange(color)}
-        />
-      ))}
-    </Form>
+              <Form>
+                {colorOptions.map((color) => (
+                  <Form.Check
+                    key={color}
+                    type="checkbox"
+                    id={color}
+                    label={color}
+                    checked={selectedColors.includes(color)}
+                    onChange={() => handleCheckboxChange(color)}
+                    className="d-flex justify-content-start"
+                  />
+                ))}
+              </Form>
             </Accordion.Body>
           </Accordion.Item>
-
         </Accordion>
       </div>
     </div>

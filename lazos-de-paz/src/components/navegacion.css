@@ -3,6 +3,13 @@
     src: url('../assets/AlexBrush-Regular.ttf') ;
     /* Agrega más formatos si es necesario */
   }
+
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/Roboto-Black.ttf') ;
+    /* Agrega más formatos si es necesario */
+  }
   
   .lazos-de-paz {
     font-family: 'AlexBrushFont';
@@ -13,14 +20,17 @@
 .text-link {
     font-size: medium;
     font-weight: 500;
-  color: rgb(49, 48, 48);
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto';
 }
 
 .text-link:hover {
     transform: scale(1.05);
     color: #000;
+    text-decoration:underline;
 }
 
-.navbar-custom{background-color: #FFA9A1 ; margin: 0;width: auto;}
+.navbar-custom{background-color: #FFA9A1 ; margin: 0;width: auto; height: 10vh; }
 
 
+.navlinks-personalize{margin: 0; }

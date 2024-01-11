@@ -1,8 +1,8 @@
 .filter-container { width: 50vh;}
 /* filters.css */
 
-.filter-container {
+.slider-container {
   display: flex;
-  width: auto;
+  width: auto ;
 }
 

@@ -10,6 +10,8 @@ function Navegacion() {
   return (
     <div className='p-1'>
       <Navbar collapseOnSelect expand="lg" className="navbar-custom fixed-top">
+        
+        <Nav.Link as={Link} to='/' >
         <Navbar.Brand>
           <img
             alt="logo"
@@ -21,10 +23,12 @@ function Navegacion() {
           {' '}
           <span className="lazos-de-paz">Lazos de Paz</span>
         </Navbar.Brand>
+        </Nav.Link>
+        
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/Home' className='text-link'>Home</Nav.Link>
+            <Nav.Link as={Link} to='/' className='text-link'>Home</Nav.Link>
             <Nav.Link as={Link} to='/Products' className='text-link'>Productos</Nav.Link>
             <Nav.Link as={Link} to='/Nosotros' className='text-link'>Nosotros</Nav.Link>
             <Nav.Link as={Link} to='/Contacto' className='text-link'>Contactanos</Nav.Link>
