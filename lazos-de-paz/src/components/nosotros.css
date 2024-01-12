@@ -1,3 +1,30 @@
 /* Nosotros.js */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/Roboto-Black.ttf') ;
+    /* Agrega más formatos si es necesario */
+  }
 
-iframe {width: 100vw; height: 75vh;}
+
+iframe {width: 100vw; height: 85vh; padding-top: 8vh;}
+
+.container-nosotros img{width: 80vw;   padding: 1%;
+    background-color: #fff;
+  border-radius: 10px;
+
+  border-radius: 0 !important;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.357);}
+
+
+  
+
+.titulo-nosotros{font-family: 'Roboto';
+    font-size: 3.5em;
+    color:#d19e66
+    }
+
+.subtitulo-nosotros{font-family: 'Roboto';
+font-size: larger;
+font-weight: 500;
+padding: 1%;
+color:#d19e66}

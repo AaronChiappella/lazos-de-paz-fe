@@ -1,6 +1,9 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
+
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +39,5 @@
     transform: rotate(360deg);
   }
 }
+
+

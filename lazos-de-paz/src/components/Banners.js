@@ -11,12 +11,12 @@ import bannerAccesorios from '../assets/banner-accesorios.jpg'
 function Banners() {
   const bannerData = [
     {
-      title: 'Niños/as',
+      title: 'Inferiores',
       imageUrl: bannerNinos,
       link: 'patrones',
     },
     {
-      title: 'Adultos',
+      title: 'Superiores',
       imageUrl: bannerAdultos,
       link: 'tejidos',
     },

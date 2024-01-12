@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/Roboto-Black.ttf') ;
+  /* Agrega más formatos si es necesario */
+}
 
   .btn-banner{
+    font-style: bold;
   cursor:pointer;
     position:relative;
-    padding:10px 15px;
+    
+    padding:10px 10px;
     background:white;
     font-size:28px;
     border-top-right-radius:10px;

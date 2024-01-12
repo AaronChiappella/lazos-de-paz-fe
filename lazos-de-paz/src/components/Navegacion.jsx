@@ -18,7 +18,8 @@ function Navegacion() {
             src={logo}
             width="40"
             height="40"
-            className="d-inline-block align-top"
+            className="d-inline-block align-top "
+            style={{ paddingLeft: '1%' }}
           />
           {' '}
           <span className="lazos-de-paz">Lazos de Paz</span>
@@ -31,7 +32,7 @@ function Navegacion() {
             <Nav.Link as={Link} to='/' className='text-link'>Home</Nav.Link>
             <Nav.Link as={Link} to='/Products' className='text-link'>Productos</Nav.Link>
             <Nav.Link as={Link} to='/Nosotros' className='text-link'>Nosotros</Nav.Link>
-            <Nav.Link as={Link} to='/Contacto' className='text-link'>Contactanos</Nav.Link>
+            {/* <Nav.Link as={Link} to='/Contacto' className='text-link'>Contactanos</Nav.Link> */}
           </Nav>
           <Nav className="ms-auto"> {/* Muevo este Nav a la derecha con ms-auto */}
             <Navbar.Brand href="#">

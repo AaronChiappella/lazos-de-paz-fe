@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/Roboto-Black.ttf') ;
+  /* Agrega más formatos si es necesario */
+}
+
+
 .card:hover {
    transition: all 0.1s linear;
    transform: scale(1.03);
@@ -8,6 +15,7 @@
 .card-text {
   padding: 0.3rem 1rem;
   font-size: 1rem;
+  font-family: 'Roboto';
 }
 
 .overflow {

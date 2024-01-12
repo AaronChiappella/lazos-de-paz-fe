@@ -1,4 +1,7 @@
+// App.js
+
 import './App.css';
+import './components/scrollBar.css'; // Importa el archivo CSS de estilos de la barra de desplazamiento
 
 import Navegacion from './components/Navegacion';
 import Home from './components/Home';
@@ -7,28 +10,22 @@ import Nosotros from './components/Nosotros';
 import WhatsappButton from "./components/WhatsappButton";
 import InstagramButton from "./components/InstagramButton";
 
-
-
-
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-
       <Navegacion />
-
+      
       <Routes>
-      <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/products' element={<Products />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/contactanos' />
-
       </Routes>
+      
       <InstagramButton />
       <WhatsappButton />
-
-
     </div>
   );
 }

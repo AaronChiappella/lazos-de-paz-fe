@@ -1,14 +1,20 @@
 /* ProductList */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/Roboto-Black.ttf') ;
+    /* Agrega más formatos si es necesario */
+  }
 
 
 .container-product-list{ margin-top:2%;
+    font-family: 'Roboto';
     margin-bottom: 2%;
  background-color:#FFF;
 width: 100vw;
 border-radius: 10px;
 padding: 1%;
 font-weight: bold; /* Añadir negrita al texto */
-
+color:#d19e66
 }
 
 
