@@ -19,8 +19,8 @@ function HomeSlider() {
           <Carousel.Caption>
             <h3>Lanas</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            <Button variant="outline-light">Nuestras Lanas</Button>{' '}
-
+{/*             <Button variant="outline-light">Nuestras Lanas</Button>{' '}
+ */}
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -28,8 +28,8 @@ function HomeSlider() {
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Button variant="outline-light">Nuestras Lanas</Button>{' '}
-
+{/*             <Button variant="outline-light">Nuestras Lanas</Button>{' '}
+ */}
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -39,8 +39,8 @@ function HomeSlider() {
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
-            <Button variant="outline-light">Nuestras Lanas</Button>{' '}
-
+{/*             <Button variant="outline-light">Nuestras Lanas</Button>{' '}
+ */}
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

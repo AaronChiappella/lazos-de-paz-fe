@@ -16,20 +16,21 @@ function Products() {
 
   return (
     <>
-     {/*  <div>
+        <div>
         <ImagenCabcera texto="Productos" />
 
-      </div> */}
-      <div className="p-3">
-      <Breadcrumb>
-        <Breadcrumb.Item href="/Home">Home</Breadcrumb.Item>
+      </div> 
+      <div className="p-1">
+        <Breadcrumb>
+          <Breadcrumb.Item href="/Home">Home</Breadcrumb.Item>
 
 
 
-        <Breadcrumb.Item active>Productos</Breadcrumb.Item>
-      </Breadcrumb>
+          <Breadcrumb.Item active>Productos</Breadcrumb.Item>
+        </Breadcrumb>
       </div>
       <div className=" d-flex">
+        
 
         <Filters />
         <Cards />
