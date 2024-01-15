@@ -1,21 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
 
 import './filters.css';
 
 function Filters() {
-  const [selectedColors, setSelectedColors] = useState([]);
-  const [activeAccordion, setActiveAccordion] = useState(['0', '1', '2', '3', '5']); // Todos los elementos abiertos por defecto
-
-  const handleCheckboxChange = (color) => {
-    const updatedColors = selectedColors.includes(color)
-      ? selectedColors.filter((selectedColor) => selectedColor !== color)
-      : [...selectedColors, color];
-
-    setSelectedColors(updatedColors);
-  };
-
   const sexOptions = ['Masculino', 'Femenino', 'Unisex'];
   const categoryOptions = ['Superior', 'Inferior', 'Accesorio'];
   const typeProductOptions = ['Lana fina', 'Lana gruesa', 'Lana Intermedia'];
@@ -38,7 +27,7 @@ function Filters() {
   return (
     <div className='filter-container' sticky="left">
       <div className='scroll-container'>
-        <Accordion activeKey={activeAccordion} onSelect={(e) => setActiveAccordion(e)}>
+        <Accordion defaultActiveKey={['0', '1', '2', '3', '5']}>{/* activa los accordion item abiertos por defecto al renderizar */}
           <Accordion.Item eventKey="0">
             <Accordion.Header>Sexo</Accordion.Header>
             <Accordion.Body>
@@ -117,8 +106,6 @@ function Filters() {
                     type="checkbox"
                     id={color}
                     label={color}
-                    checked={selectedColors.includes(color)}
-                    onChange={() => handleCheckboxChange(color)}
                     className="d-flex justify-content-start"
                   />
                 ))}

@@ -1,7 +1,11 @@
 import React from 'react';
+
+/* libreria de sliders */
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+/* incorporando fontawesome e importando icons */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruckFast,faMoneyBillTransfer,faUserShield} from '@fortawesome/free-solid-svg-icons';
 import {faWhatsapp} from '@fortawesome/free-brands-svg-icons';

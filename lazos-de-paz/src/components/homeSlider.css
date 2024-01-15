@@ -3,10 +3,15 @@
 
 
 
-.slider-container{ width: 100vw; margin-top:8vh ;}
+.slider-container {
+    width: 100vw;
+    margin-top: 8vh;
+}
 
 
 
 
-.slider-container img {width: 100vw; height: 80vh; }
-
+.slider-container img {
+    width: 100vw;
+    height: 80vh;
+}

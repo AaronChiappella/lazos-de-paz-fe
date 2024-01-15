@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
+import { Button } from 'react-bootstrap';
+
 import { useParams } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus, faP } from '@fortawesome/free-solid-svg-icons';
-
-
 
 import './verProducto.css';
 
@@ -18,7 +19,7 @@ import imagenProducto5 from '../assets/imagenesProductos/chal-ana.webp';
 import imagenProducto6 from '../assets/imagenesProductos/chaleco-ines.webp';
 import imagenProducto7 from '../assets/imagenesProductos/ruana-andresa.webp';
 import imagenProducto8 from '../assets/imagenesProductos/top-nude.webp';
-import { Button } from 'react-bootstrap';
+
 
 function VerProducto() {
     const products = [
@@ -96,31 +97,32 @@ function VerProducto() {
         },
     ];
 
-    const { id } = useParams(); // Obtén el parámetro id de la URL
-    const product = products.find((p) => p.id === parseInt(id)); // Busca el producto por id
+    const { id } = useParams();
+    const product = products.find((p) => p.id === parseInt(id));
 
 
 
     useEffect(() => {
-        // Actualiza el componente cuando cambia el producto
         if (product) {
-            // Puedes inicializar valores aquí basándote en el producto si es necesario
             setValor(valor);
         }
     }, [product]);
 
     const [valor, setValor] = useState(1);
 
-    const incrementar = () => {
-        setValor(valor + 1);
+    const incrementar = (stock) => {
+        if (valor < stock) {
+            setValor(valor + 1);
+        }
     };
 
     const decrementar = () => {
-        setValor(valor - 1);
+        if (valor > 1) {
+            setValor(valor - 1);
+        }
     };
 
     if (!product) {
-        // Manejar el caso donde no se encuentra el producto por el id
         return <div>No se encontró el producto.</div>;
     }
 
@@ -134,7 +136,7 @@ function VerProducto() {
                     <p className='text-secondary'>{product.description}</p>
                 </div>
                 <div className='talles-producto'>
-                    <Form.Select aria-label="talle" size='sm' >
+                <Form.Select aria-label="talle" size='sm' >
                         <option>Selecciona tu talle</option>
                         {product.talles.map((talle, index) => (
                             <option key={index} value={talle}>
@@ -149,11 +151,9 @@ function VerProducto() {
                     <div className='contador-producto'>
                         <FontAwesomeIcon icon={faMinus} onClick={decrementar} className='contador-decremento'>Decrementar</FontAwesomeIcon>
                         <div className='contador-valor'>
-                            <h5 >{valor}</h5>
+                            <h5>{valor}</h5>
                         </div>
-                        <FontAwesomeIcon icon={faPlus} onClick={incrementar} className='contador-incremento'>Decrementar</FontAwesomeIcon>
-
-
+                        <FontAwesomeIcon icon={faPlus} onClick={() => incrementar(product.stock)} className='contador-incremento'>Incrementar</FontAwesomeIcon>
                     </div>
                 </div>
                 <div className='total-producto'> ${valor * product.price}</div>
@@ -166,6 +166,6 @@ function VerProducto() {
                 </div>
             </div>
         </div>);
-}
+};
 
 export default VerProducto;

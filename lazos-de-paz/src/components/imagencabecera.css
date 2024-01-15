@@ -7,8 +7,8 @@
     height: 40vh; /* Ajusta la altura según tus necesidades */
     position: relative;
     margin-top:7vh;
-    margin-bottom:2vh
-
+    margin-bottom:2vh;
+    color:#000000
   }
   
   .texto-centrado {
